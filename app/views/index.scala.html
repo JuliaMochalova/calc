@@ -1,0 +1,55 @@
+@(message: String)
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Калькулятор</title>
+    <style type="text/css">
+	#calculator * {font-size: 16px;}
+	#calculator table {border: solid 3px silver; border-spacing: 3px; background-color: #D7FEF2; }
+	#calculator table td {border-spacing: 3px;}
+	input.display {width: 166px; text-align: right;}
+	td.buttons {border-top: solid 1px #9FE9D5;   }
+	input[type= button] {width: 40px; height: 30px;}
+</style>
+</head>
+
+<body>
+<form name="calc" id="calculator">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="input" size="18" class="display" value="@message">
+            </td>
+        </tr>
+        <tr>
+            <td class="buttons">
+                <input type="button" name="one" value="1" OnClick="window.location='/1'">
+                <input type="button" name="two" value="2" OnClick="window.location='/2'">
+                <input type="button" name="three" value="3" OnClick="window.location='/3'">
+                <input type="button" name="add" value="+" OnClick="window.location='/+'">
+                <br>
+                <input type="button" name="four" value="4" OnClick="window.location='/4'">
+                <input type="button" name="five" value="5" OnClick="window.location='/5'">
+                <input type="button" name="six" value="6" OnClick="window.location='/6'">
+                <input type="button" name="sub" value="-" OnClick="window.location='/-'">
+                <br>
+                <input type="button" name="seven" value="7" OnClick="window.location='/7'">
+                <input type="button" name="eight" value="8" OnClick="window.location='/8'">
+                <input type="button" name="nine" value="9" OnClick="window.location='/9'">
+                <input type="button" name="mul" value="x" OnClick="window.location='/*'">
+                <br>
+                <input type="button" name="clear" value="c" OnClick="window.location='/'">
+                <input type="button" name="zero" value="0" OnClick="window.location='/0'">
+                <input type="button" name="doit" value="=" OnClick="window.location='/do'">
+                <input type="button" name="div"  value="/" OnClick="window.location='/d'">
+                </form>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
